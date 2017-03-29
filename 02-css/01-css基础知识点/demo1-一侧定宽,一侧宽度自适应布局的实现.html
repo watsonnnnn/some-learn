@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一侧固定宽度,另一侧自适应布局</title>
+
+    <style type="text/css">
+        #wrap {
+            overflow: hidden;
+            position: relative;
+        }
+
+        #aside {
+            height: 400px;
+            width: 200px;
+            background: #f00;
+            /*float: left;*/
+            /*position: absolute;*/
+            /*left: 0;*/
+            /*top: 0;*/
+        }
+
+        #content-wrap {
+            float: right;
+            margin-right: -210px;
+            width: 100%;
+            /*margin-left: 210px;*/
+            height: 500px;
+            background: green;
+        }
+
+        #content {
+            margin-right: 200px;
+        }
+
+        #footer {
+            width: 100%;
+            height: 100px;
+            background: blue;
+        }
+    </style>
+</head>
+
+
+<body>
+
+<div id="wrap">
+    <div id="content-wrap">
+        <div id="content">
+            this is content.
+            this is content.this is content.
+            this is content.this is content.
+            this is content.this is content.
+            this is content.this is content.
+            this is content.this is content.
+            this is content.this is content.
+            this is content.this is content.
+        </div>
+    </div>
+    <div id="aside"></div>
+
+</div>
+
+<div id="footer">
+
+</div>
+
+</body>
+</html>

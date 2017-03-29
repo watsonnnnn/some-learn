@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>box-shadow实例</title>
+</head>
+<body>
+
+
+<h3>1. 单边阴影效果</h3>
+<style type="text/css">
+    .box-shadow {
+        width: 100px;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        margin: 20px;
+    }
+
+    .top {
+        box-shadow: 0 -5px 5px -2px #bbb;
+    }
+
+    .bottom {
+        box-shadow: 0 5px 5px -2px #bbb;
+    }
+
+    .left {
+        box-shadow: -5px 0 5px -2px #bbb;;
+    }
+
+    .right {
+        box-shadow: 5px 0 5px -2px #bbb;
+    }
+
+</style>
+
+<div class="box-shadow top"></div>
+<div class="box-shadow right"></div>
+<div class="box-shadow bottom"></div>
+<div class="box-shadow left"></div>
+
+
+<h3>2. 四边相同的阴影</h3>
+
+<style type="text/css">
+    #four-edge-shadow {
+        width: 200px;
+        height: 100px;
+        border-radius: 10px;
+        border: 1px solid #ddd;;
+        box-shadow: 0 0 20px 5px #ccc;
+    }
+</style>
+
+<div id="four-edge-shadow"></div>
+
+
+<h3>3. 设置多个阴影</h3>
+
+<style type="text/css">
+    #multi-shadow {
+        width: 200px;
+        height: 100px;
+        border-radius: 10px;
+        border: 1px solid #ddd;;
+        box-shadow: 0 0 10px red,
+        0 0 20px green,
+        0 0 30px blue;
+    }
+</style>
+
+<div id="multi-shadow"></div>
+
+</body>
+</html>

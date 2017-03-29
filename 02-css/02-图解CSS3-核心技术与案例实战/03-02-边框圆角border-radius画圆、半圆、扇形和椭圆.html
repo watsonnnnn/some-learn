@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css3 demo</title>
+
+
+</head>
+<body>
+
+<p>圆形--------------------------------------------------</p>
+<style type="text/css">
+    .circle {
+        width: 100px;
+        height: 100px;
+        background: #f00;
+        border-radius: 50%;
+    }
+</style>
+
+<div class="circle"></div>
+
+<p>半圆形--------------------------------------------------</p>
+<style type="text/css">
+    div {
+        background: red;
+        margin-bottom: 20px;
+    }
+
+    .up-semi-circle {
+        width: 100px;
+        height: 50px;
+        border-radius: 50px 50px 0 0;
+    }
+
+    .down-semi-circle {
+        width: 100px;
+        height: 50px;
+        border-radius: 0 0 50px 50px;
+    }
+
+    .left-semi-circle {
+        width: 50px;
+        height: 100px;
+        border-radius: 50px 0 0 50px;
+    }
+
+    .right-semi-circle {
+        width: 50px;
+        height: 100px;
+        border-radius: 0 50px 50px 0;
+    }
+</style>
+
+<div class="up-semi-circle"></div>
+<div class="down-semi-circle"></div>
+<div class="left-semi-circle"></div>
+<div class="right-semi-circle"></div>
+
+<p>扇形--------------------------------------------------</p>
+
+<style type="text/css">
+    .sector-1 {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px 0 0 0;
+    }
+
+    .sector-2 {
+        width: 50px;
+        height: 50px;
+        border-radius: 0 50px 0 0;
+    }
+
+    .sector-3 {
+        width: 50px;
+        height: 50px;
+        border-radius: 0 0 50px 0;
+    }
+
+    .sector-4 {
+        width: 50px;
+        height: 50px;
+        border-radius: 0 0 0 50px;
+    }
+</style>
+
+<div class="sector-1"></div>
+<div class="sector-2"></div>
+<div class="sector-3"></div>
+<div class="sector-4"></div>
+
+<p>椭圆形--------------------------------------------------</p>
+
+<style type="text/css">
+    .ellipse-1 {
+        width: 100px;
+        height: 50px;
+        border-radius: 100px 100px 100px 100px / 50px 50px 50px 50px;
+    }
+
+    .ellipse-2 {
+        width: 50px;
+        height: 100px;
+        border-radius: 50px 50px 50px 50px /100px 100px 100px 100px;
+    }
+</style>
+
+<div class="ellipse-1"></div>
+<div class="ellipse-2"></div>
+
+</body>
+</html>
